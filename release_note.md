@@ -10,6 +10,12 @@ Author: [911992](https://github.com/911992)
     * Generated `close()` method now doesn't throw `Exception`  
 1. `Source_Code::Main_GUI.java`  
     * Reorder package/class-name input elements  
+2. `Source_Code::WAsys_Project_Info.java`
+    * Updated `PROJECT_VERSION`, and `PROJECT_BUILD` fields
+3. Repo
+    * Updated `pom.xml` file
+        * Chnaged the artifact to version `0.1.1`
+    * Added `_ignore` folder to `.gitignore`
 
 
 <hr/>
