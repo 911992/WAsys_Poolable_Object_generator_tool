@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>279</y>
+      <w>369</w>
+      <h>234</h>
+    </coordinates>
+    <panel_attributes>{USER_TYPE_NAME}
+--
+_-__pool__:Object_Pool {final}_
+-__object_is_busy__:bool {volatile}
+--
+&lt;__pool__init&gt;:static{}
+_+get_an_instance():{USER_TYPE_NAME}_
+_+get_pool(void):Object_Pool_
+-{USER_TYPE_NAME}():{USER_TYPE_NAME}
+-__is_invalid__(void):bool
+-__invalidate__(void):void
++back_to_pool(void):void
++post_create(void):void
++pre_destroy(void):void
++reset_state(void):void
++set_pool(:Object_Pool):void
++close(void):void
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>99</x>
+      <y>135</y>
+      <w>324</w>
+      <h>450</h>
+    </coordinates>
+    <panel_attributes>*Document*
+-.
+Project: Poolable_Object generator tool
+Title: Generated Artifact Class Diagram
+Doc version: 0.1.0(Jun 25, 2020)
+/(Please refer to gen_artifact_class_diagram_release_note.md file for version history)/
+Repo:
+https://github.com/911992/WAsys_Poolable_Object_generator_tool
+Author(s):
+911992
+
+-
+*Meta Legends*
+-.
+valign=top
+halign=left
+layer=-100
+bg=light_gray
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>99</x>
+      <y>594</y>
+      <w>324</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>*Authors*
+-
+911992[principal]
+https://github.com/911992
+-.
+
+valign=top
+halign=left
+layer=-100
+bg=light_gray
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>108</x>
+      <y>432</y>
+      <w>108</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=#eeeeff
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>225</x>
+      <y>504</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Part of generated artifact
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>108</x>
+      <y>504</y>
+      <w>108</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>225</x>
+      <y>432</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Note
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>441</x>
+      <y>540</y>
+      <w>855</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>wasys::lib::generic_object_pool
+--
+bg=#eeffff
+layer=-200</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>459</x>
+      <y>567</y>
+      <w>576</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+WAsys Generic Object Pool
+bg=#ccffff
+layer=-190</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1026</x>
+      <y>585</y>
+      <w>126</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=)-</panel_attributes>
+    <additional_attributes>110.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1026</x>
+      <y>684</y>
+      <w>126</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=()-
+bg=#ccffff</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1053</x>
+      <y>702</y>
+      <w>144</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Object_Pool
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1062</x>
+      <y>567</y>
+      <w>144</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Object_Factory
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>477</x>
+      <y>612</y>
+      <w>144</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Poolable_Object
+bg=#99ffff
+layer=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>450</x>
+      <y>360</y>
+      <w>36</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>*B*
+transparency=0
+layer=1
+lw=2
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>549</x>
+      <y>621</y>
+      <w>99</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1125</x>
+      <y>594</y>
+      <w>117</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1134</x>
+      <y>684</y>
+      <w>108</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>846</x>
+      <y>612</y>
+      <w>171</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>/Pool_Context/
+--
+--
+bg=#99ffff
+layer=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>765</x>
+      <y>621</y>
+      <w>99</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>468</x>
+      <y>738</y>
+      <w>522</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>Artifact repo:
+https://github.com/911992/WAsys_simple_generic_object_pool
+bg=#eeeeff</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>720</y>
+      <w>45</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0;30.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>972</x>
+      <y>351</y>
+      <w>297</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>Factory
+{static} {private}
+--
+--
++create_object():Poolable_Object
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>108</x>
+      <y>387</y>
+      <w>36</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>*X*
+lw=2
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>153</x>
+      <y>387</y>
+      <w>189</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>On-page reference
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>900</x>
+      <y>360</y>
+      <w>90</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=(+)-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>927</x>
+      <y>171</y>
+      <w>369</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>{USER_TYPE_NAME} refers to users requested type name
+bg=#eeeeff
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>846</x>
+      <y>198</y>
+      <w>99</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>441</x>
+      <y>243</y>
+      <w>855</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>{USER_PACKAGE_NAME}
+--
+bg=#eeffee
+layer=-200</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>441</x>
+      <y>171</y>
+      <w>360</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>{USER_PACKAGE_NAME} refers to users requested package name
+bg=#eeeeff
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>756</x>
+      <y>216</y>
+      <w>27</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>900</x>
+      <y>297</y>
+      <w>180</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;creates&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;180.0;20.0;180.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>630</x>
+      <y>612</y>
+      <w>36</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>*A*
+transparency=0
+layer=1
+bg=orange
+lw=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>450</x>
+      <y>306</y>
+      <w>36</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>*A*
+transparency=0
+layer=1
+bg=orange
+lw=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>477</x>
+      <y>315</y>
+      <w>81</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1224</x>
+      <y>675</y>
+      <w>36</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>*B*
+transparency=0
+layer=1
+lw=2
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>477</x>
+      <y>369</y>
+      <w>81</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>1071</x>
+      <y>738</y>
+      <w>225</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>java::lang::AutoClosable
+
+bg=white
+transparency=0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1035</x>
+      <y>747</y>
+      <w>153</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1008</x>
+      <y>738</y>
+      <w>36</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>*C*
+transparency=0
+layer=1
+lw=2
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>450</x>
+      <y>414</y>
+      <w>36</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>*C*
+transparency=0
+layer=1
+lw=2
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>477</x>
+      <y>423</y>
+      <w>81</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1224</x>
+      <y>585</y>
+      <w>36</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>*D*
+transparency=0
+layer=1
+lw=2
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1224</x>
+      <y>297</y>
+      <w>36</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>*D*
+transparency=0
+layer=1
+lw=2
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1116</x>
+      <y>306</y>
+      <w>126</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>441</x>
+      <y>135</y>
+      <w>855</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Any :static{} referens to static initialize block in java as static{...}
+bg=#eeeeff
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>810</x>
+      <y>153</y>
+      <w>27</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>738</x>
+      <y>612</y>
+      <w>36</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>*E*
+transparency=0
+layer=1
+lw=2
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>450</x>
+      <y>468</y>
+      <w>36</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>*E*
+transparency=0
+layer=1
+lw=2
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>477</x>
+      <y>477</y>
+      <w>81</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1008</x>
+      <y>621</y>
+      <w>144</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+m2=&lt;&lt;provides&gt;&gt;</panel_attributes>
+    <additional_attributes>140.0;70.0;140.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>792</x>
+      <y>621</y>
+      <w>360</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=.
+fg=gray</panel_attributes>
+    <additional_attributes>380.0;50.0;10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
