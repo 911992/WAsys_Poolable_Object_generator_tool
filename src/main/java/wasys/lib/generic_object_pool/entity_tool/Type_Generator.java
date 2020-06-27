@@ -10,6 +10,9 @@ Created on: Jun 25, 2020 12:22:59 PM
     @author https://github.com/911992
  
 History:
+    0.1.2 (20200626)
+        • Fixed the issue, about missed import for type Generic_Object_Pool_Policy when defailt pool policy statement is asked
+
     0.1.1 (20200626)
         • Generated close() method now doesn't throw Exception
 
@@ -118,8 +121,8 @@ public class Type_Generator {
         
         /*imports*/
         _out.printf("%s\n",ESSENTIAL_IMPORTS_ALL);
-        if(arg_pool_policy == null){
-            _out.printf("%s\n", OBJECT_POOL_POLICY_IMPORT);
+        if(arg_pool_policy == DEFAULT_POL_POLICY_STATEMENT || arg_pool_policy.equals(DEFAULT_POL_POLICY_STATEMENT)){
+            _out.printf("import %s;\n", OBJECT_POOL_POLICY_IMPORT);
         }
         _out.printf("\n");
         

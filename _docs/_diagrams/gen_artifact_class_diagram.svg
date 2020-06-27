@@ -60,34 +60,34 @@
       ><path d="M0 0 L0 260 L410 260 L410 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath19"
-      ><path d="M0 0 L0 70 L400 70 L400 0 Z"
+      ><path d="M0 0 L0 30 L100 30 L100 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath20"
-      ><path d="M0 0 L0 90 L160 90 L160 0 Z"
+      ><path d="M0 0 L0 70 L400 70 L400 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath21"
-      ><path d="M0 0 L0 30 L90 30 L90 0 Z"
+      ><path d="M0 0 L0 90 L160 90 L160 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath22"
-      ><path d="M0 0 L0 140 L30 140 L30 0 Z"
+      ><path d="M0 0 L0 30 L90 30 L90 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath23"
-      ><path d="M0 0 L0 70 L140 70 L140 0 Z"
+      ><path d="M0 0 L0 140 L30 140 L30 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath24"
-      ><path d="M0 0 L0 30 L170 30 L170 0 Z"
+      ><path d="M0 0 L0 70 L140 70 L140 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath25"
-      ><path d="M0 0 L0 80 L200 80 L200 0 Z"
+      ><path d="M0 0 L0 30 L170 30 L170 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath26"
-      ><path d="M0 0 L0 50 L30 50 L30 0 Z"
+      ><path d="M0 0 L0 80 L200 80 L200 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath27"
-      ><path d="M0 0 L0 110 L110 110 L110 0 Z"
+      ><path d="M0 0 L0 50 L30 50 L30 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath28"
-      ><path d="M0 0 L0 30 L100 30 L100 0 Z"
+      ><path d="M0 0 L0 110 L110 110 L110 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath29"
       ><path d="M0 0 L0 60 L50 60 L50 0 Z"
@@ -108,9 +108,12 @@
       ><path d="M0 0 L0 50 L140 50 L140 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath35"
-      ><path d="M0 0 L0 50 L190 50 L190 0 Z"
+      ><path d="M0 0 L0 40 L430 40 L430 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath36"
+      ><path d="M0 0 L0 50 L190 50 L190 0 Z"
+      /></clipPath
+      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath37"
       ><path d="M0 0 L0 70 L160 70 L160 0 Z"
       /></clipPath
     ></defs
@@ -189,7 +192,7 @@
       ><text x="5" xml:space="preserve" y="82.7812" clip-path="url(#clipPath6)" stroke="none"
       >Diagram</text
       ><text x="5" xml:space="preserve" y="97.9375" clip-path="url(#clipPath6)" stroke="none"
-      >Doc version: 0.1.0(Jun 25, 2020)</text
+      >Doc version: 0.1.2(Jun 26, 2020)</text
       ><text font-style="italic" x="5" xml:space="preserve" y="113.0938" clip-path="url(#clipPath6)" stroke="none"
       >(Please refer to</text
       ><text font-style="italic" x="5" xml:space="preserve" y="128.25" clip-path="url(#clipPath6)" stroke="none"
@@ -362,22 +365,46 @@
       ><text x="5" font-size="16px" y="239.3438" clip-path="url(#clipPath18)" font-family="monospace" stroke="none" xml:space="preserve"
       >+close(void):void</text
     ></g
+    ><g fill="blue" transform="translate(1080,520)" stroke="blue"
+    ><circle r="19.25" clip-path="url(#clipPath12)" cx="19.75" cy="19.75" stroke="none"
+      /><circle clip-path="url(#clipPath12)" fill="none" r="19.25" cx="19.75" cy="19.75" stroke="white" stroke-width="2"
+    /></g
+    ><g font-size="16px" transform="translate(1080,520)" fill="white" font-family="monospace" stroke="white" font-weight="bold" stroke-width="2"
+    ><text x="15" xml:space="preserve" y="24.5781" clip-path="url(#clipPath12)" stroke="none"
+      >F</text
+    ></g
+    ><g stroke-dasharray="8,5" stroke-miterlimit="5" transform="translate(1000,530)" stroke-linecap="butt"
+    ><path fill="none" d="M79.5 10.5 L10.5 10.5" clip-path="url(#clipPath19)"
+      /><path fill="none" stroke-miterlimit="10" stroke-dasharray="none" d="M68.7417 4 L80 10.5 L68.7417 17" clip-path="url(#clipPath19)" stroke-linecap="square"
+    /></g
+    ><g stroke-dasharray="8,5" stroke-miterlimit="5" transform="translate(950,760)" stroke-linecap="butt"
+    ><path fill="none" d="M11.5 10.5 L80.5 10.5" clip-path="url(#clipPath19)"
+      /><path fill="none" stroke-miterlimit="10" stroke-dasharray="none" d="M22.2583 17 L11 10.5 L22.2583 4" clip-path="url(#clipPath19)" stroke-linecap="square"
+    /></g
+    ><g fill="blue" transform="translate(1030,750)" stroke="blue"
+    ><circle r="19.25" clip-path="url(#clipPath12)" cx="19.75" cy="19.75" stroke="none"
+      /><circle clip-path="url(#clipPath12)" fill="none" r="19.25" cx="19.75" cy="19.75" stroke="white" stroke-width="2"
+    /></g
+    ><g font-size="16px" transform="translate(1030,750)" fill="white" font-family="monospace" stroke="white" font-weight="bold" stroke-width="2"
+    ><text x="15" xml:space="preserve" y="24.5781" clip-path="url(#clipPath12)" stroke="none"
+      >F</text
+    ></g
     ><g fill="rgb(120,120,120)" stroke-miterlimit="5" stroke-dasharray="8,5" transform="translate(880,690)" stroke-linecap="butt" stroke="rgb(120,120,120)"
-    ><path fill="none" d="M380.5 50.5 L10.5 50.5" clip-path="url(#clipPath19)"
-      /><path fill="none" d="M10.5 50.5 L10.5 10.5" clip-path="url(#clipPath19)"
+    ><path fill="none" d="M380.5 50.5 L10.5 50.5" clip-path="url(#clipPath20)"
+      /><path fill="none" d="M10.5 50.5 L10.5 10.5" clip-path="url(#clipPath20)"
     /></g
     ><g stroke-dasharray="8,5" stroke-miterlimit="5" transform="translate(1120,690)" stroke-linecap="butt"
-    ><path fill="none" d="M140.5 69.5 L140.5 10.5" clip-path="url(#clipPath20)"
-      /><path fill="none" d="M140.5 10.5 L10.5 10.5" clip-path="url(#clipPath20)"
-      /><path fill="none" stroke-miterlimit="10" stroke-dasharray="none" d="M147 58.7417 L140.5 70 L134 58.7417" clip-path="url(#clipPath20)" stroke-linecap="square"
+    ><path fill="none" d="M140.5 69.5 L140.5 10.5" clip-path="url(#clipPath21)"
+      /><path fill="none" d="M140.5 10.5 L10.5 10.5" clip-path="url(#clipPath21)"
+      /><path fill="none" stroke-miterlimit="10" stroke-dasharray="none" d="M147 58.7417 L140.5 70 L134 58.7417" clip-path="url(#clipPath21)" stroke-linecap="square"
     /></g
     ><g font-family="monospace" font-size="16px" transform="translate(1120,690)"
-    ><text x="29" xml:space="preserve" y="23.1562" clip-path="url(#clipPath20)" stroke="none"
+    ><text x="29" xml:space="preserve" y="23.1562" clip-path="url(#clipPath21)" stroke="none"
       >«provides»</text
     ></g
     ><g stroke-dasharray="8,5" stroke-miterlimit="5" transform="translate(530,530)" stroke-linecap="butt"
-    ><path fill="none" d="M11.5 10.5 L70.5 10.5" clip-path="url(#clipPath21)"
-      /><path fill="none" stroke-miterlimit="10" stroke-dasharray="none" d="M22.2583 17 L11 10.5 L22.2583 4" clip-path="url(#clipPath21)" stroke-linecap="square"
+    ><path fill="none" d="M11.5 10.5 L70.5 10.5" clip-path="url(#clipPath22)"
+      /><path fill="none" stroke-miterlimit="10" stroke-dasharray="none" d="M22.2583 17 L11 10.5 L22.2583 4" clip-path="url(#clipPath22)" stroke-linecap="square"
     /></g
     ><g fill="rgb(255,175,175)" transform="translate(500,520)" stroke="rgb(255,175,175)"
     ><circle r="19.25" clip-path="url(#clipPath12)" cx="19.75" cy="19.75" stroke="none"
@@ -396,13 +423,13 @@
       >E</text
     ></g
     ><g stroke-dasharray="1,2" stroke-miterlimit="5" transform="translate(900,170)" stroke-linecap="butt"
-    ><path fill="none" d="M10.5 10.5 L10.5 120.5" clip-path="url(#clipPath22)"
+    ><path fill="none" d="M10.5 10.5 L10.5 120.5" clip-path="url(#clipPath23)"
     /></g
     ><g stroke-dasharray="8,5" stroke-miterlimit="5" transform="translate(1240,340)" stroke-linecap="butt"
-    ><path fill="none" d="M119.5 10.5 L10.5 10.5" clip-path="url(#clipPath23)"
-      /><path fill="none" d="M10.5 10.5 L10.5 50.5" clip-path="url(#clipPath23)"
-      /><path fill="white" d="M108.7417 4 L120 10.5 L108.7417 17 Z" clip-path="url(#clipPath23)" stroke="none"
-      /><path fill="none" stroke-miterlimit="10" stroke-dasharray="none" d="M108.7417 4 L120 10.5 L108.7417 17 Z" clip-path="url(#clipPath23)" stroke-linecap="square"
+    ><path fill="none" d="M119.5 10.5 L10.5 10.5" clip-path="url(#clipPath24)"
+      /><path fill="none" d="M10.5 10.5 L10.5 50.5" clip-path="url(#clipPath24)"
+      /><path fill="white" d="M108.7417 4 L120 10.5 L108.7417 17 Z" clip-path="url(#clipPath24)" stroke="none"
+      /><path fill="none" stroke-miterlimit="10" stroke-dasharray="none" d="M108.7417 4 L120 10.5 L108.7417 17 Z" clip-path="url(#clipPath24)" stroke-linecap="square"
     /></g
     ><g fill="yellow" transform="translate(1360,330)" stroke="yellow"
     ><circle r="19.25" clip-path="url(#clipPath12)" cx="19.75" cy="19.75" stroke="none"
@@ -421,9 +448,9 @@
       >D</text
     ></g
     ><g stroke-dasharray="8,5" stroke-miterlimit="5" transform="translate(530,470)" stroke-linecap="butt"
-    ><path fill="none" d="M11.5 10.5 L70.5 10.5" clip-path="url(#clipPath21)"
-      /><path fill="white" d="M22.2583 17 L11 10.5 L22.2583 4 Z" clip-path="url(#clipPath21)" stroke="none"
-      /><path fill="none" stroke-miterlimit="10" stroke-dasharray="none" d="M22.2583 17 L11 10.5 L22.2583 4 Z" clip-path="url(#clipPath21)" stroke-linecap="square"
+    ><path fill="none" d="M11.5 10.5 L70.5 10.5" clip-path="url(#clipPath22)"
+      /><path fill="white" d="M22.2583 17 L11 10.5 L22.2583 4 Z" clip-path="url(#clipPath22)" stroke="none"
+      /><path fill="none" stroke-miterlimit="10" stroke-dasharray="none" d="M22.2583 17 L11 10.5 L22.2583 4 Z" clip-path="url(#clipPath22)" stroke-linecap="square"
     /></g
     ><g fill="lime" transform="translate(500,460)" stroke="lime"
     ><circle r="19.25" clip-path="url(#clipPath12)" cx="19.75" cy="19.75" stroke="none"
@@ -442,13 +469,13 @@
       >C</text
     ></g
     ><g stroke-dasharray="8,5" stroke-miterlimit="5" transform="translate(1150,830)" stroke-linecap="butt"
-    ><path fill="none" d="M149.5 10.5 L10.5 10.5" clip-path="url(#clipPath24)"
-      /><path fill="white" d="M138.7417 4 L150 10.5 L138.7417 17 Z" clip-path="url(#clipPath24)" stroke="none"
-      /><path fill="none" stroke-miterlimit="10" stroke-dasharray="none" d="M138.7417 4 L150 10.5 L138.7417 17 Z" clip-path="url(#clipPath24)" stroke-linecap="square"
+    ><path fill="none" d="M149.5 10.5 L10.5 10.5" clip-path="url(#clipPath25)"
+      /><path fill="white" d="M138.7417 4 L150 10.5 L138.7417 17 Z" clip-path="url(#clipPath25)" stroke="none"
+      /><path fill="none" stroke-miterlimit="10" stroke-dasharray="none" d="M138.7417 4 L150 10.5 L138.7417 17 Z" clip-path="url(#clipPath25)" stroke-linecap="square"
     /></g
     ><g transform="translate(530,410)"
-    ><path fill="none" d="M11.5 10.5 L70.5 10.5" clip-path="url(#clipPath21)"
-      /><path fill="none" d="M22.2583 17 L11 10.5 L22.2583 4" clip-path="url(#clipPath21)"
+    ><path fill="none" d="M11.5 10.5 L70.5 10.5" clip-path="url(#clipPath22)"
+      /><path fill="none" d="M22.2583 17 L11 10.5 L22.2583 4" clip-path="url(#clipPath22)"
     /></g
     ><g fill="aqua" transform="translate(1360,750)" stroke="aqua"
     ><circle r="19.25" clip-path="url(#clipPath12)" cx="19.75" cy="19.75" stroke="none"
@@ -459,9 +486,9 @@
       >B</text
     ></g
     ><g stroke-dasharray="8,5" stroke-miterlimit="5" transform="translate(530,350)" stroke-linecap="butt"
-    ><path fill="none" d="M11.5 10.5 L70.5 10.5" clip-path="url(#clipPath21)"
-      /><path fill="white" d="M22.2583 17 L11 10.5 L22.2583 4 Z" clip-path="url(#clipPath21)" stroke="none"
-      /><path fill="none" stroke-miterlimit="10" stroke-dasharray="none" d="M22.2583 17 L11 10.5 L22.2583 4 Z" clip-path="url(#clipPath21)" stroke-linecap="square"
+    ><path fill="none" d="M11.5 10.5 L70.5 10.5" clip-path="url(#clipPath22)"
+      /><path fill="white" d="M22.2583 17 L11 10.5 L22.2583 4 Z" clip-path="url(#clipPath22)" stroke="none"
+      /><path fill="none" stroke-miterlimit="10" stroke-dasharray="none" d="M22.2583 17 L11 10.5 L22.2583 4 Z" clip-path="url(#clipPath22)" stroke-linecap="square"
     /></g
     ><g fill="rgb(255,165,0)" transform="translate(500,340)" stroke="rgb(255,165,0)"
     ><circle r="19.25" clip-path="url(#clipPath12)" cx="19.75" cy="19.75" stroke="none"
@@ -480,27 +507,27 @@
       >A</text
     ></g
     ><g stroke-dasharray="8,5" stroke-miterlimit="5" transform="translate(1000,330)" stroke-linecap="butt"
-    ><path fill="none" d="M11.5 20.5 L180.5 20.5" clip-path="url(#clipPath25)"
-      /><path fill="none" d="M180.5 20.5 L180.5 60.5" clip-path="url(#clipPath25)"
-      /><path fill="none" stroke-miterlimit="10" stroke-dasharray="none" d="M22.2583 27 L11 20.5 L22.2583 14" clip-path="url(#clipPath25)" stroke-linecap="square"
+    ><path fill="none" d="M11.5 20.5 L180.5 20.5" clip-path="url(#clipPath26)"
+      /><path fill="none" d="M180.5 20.5 L180.5 60.5" clip-path="url(#clipPath26)"
+      /><path fill="none" stroke-miterlimit="10" stroke-dasharray="none" d="M22.2583 27 L11 20.5 L22.2583 14" clip-path="url(#clipPath26)" stroke-linecap="square"
     /></g
     ><g font-family="monospace" font-size="16px" transform="translate(1000,330)"
-    ><text x="52.5703" xml:space="preserve" y="16" clip-path="url(#clipPath25)" stroke="none"
+    ><text x="52.5703" xml:space="preserve" y="16" clip-path="url(#clipPath26)" stroke="none"
       >«creates»</text
     ></g
     ><g stroke-dasharray="1,2" stroke-miterlimit="5" transform="translate(840,240)" stroke-linecap="butt"
-    ><path fill="none" d="M10.5 10.5 L10.5 30.5" clip-path="url(#clipPath26)"
+    ><path fill="none" d="M10.5 10.5 L10.5 30.5" clip-path="url(#clipPath27)"
     /></g
     ><g stroke-dasharray="1,2" stroke-miterlimit="5" transform="translate(940,220)" stroke-linecap="butt"
-    ><path fill="none" d="M90.5 10.5 L10.5 10.5" clip-path="url(#clipPath27)"
-      /><path fill="none" d="M10.5 10.5 L10.5 90.5" clip-path="url(#clipPath27)"
+    ><path fill="none" d="M90.5 10.5 L10.5 10.5" clip-path="url(#clipPath28)"
+      /><path fill="none" d="M10.5 10.5 L10.5 90.5" clip-path="url(#clipPath28)"
     /></g
     ><g transform="translate(1000,400)"
-    ><path fill="none" d="M11.5 10.5 L80.5 10.5" clip-path="url(#clipPath28)"
-      /><circle fill="white" r="10" clip-path="url(#clipPath28)" cx="10.5" cy="10.5" stroke="none"
-      /><circle fill="none" r="10" clip-path="url(#clipPath28)" cx="10.5" cy="10.5"
-      /><path fill="none" d="M5.5 10.5 L15.5 10.5" clip-path="url(#clipPath28)"
-      /><path fill="none" d="M10.5 5.5 L10.5 15.5" clip-path="url(#clipPath28)"
+    ><path fill="none" d="M11.5 10.5 L80.5 10.5" clip-path="url(#clipPath19)"
+      /><circle fill="white" r="10" clip-path="url(#clipPath19)" cx="10.5" cy="10.5" stroke="none"
+      /><circle fill="none" r="10" clip-path="url(#clipPath19)" cx="10.5" cy="10.5"
+      /><path fill="none" d="M5.5 10.5 L15.5 10.5" clip-path="url(#clipPath19)"
+      /><path fill="none" d="M10.5 5.5 L10.5 15.5" clip-path="url(#clipPath19)"
     /></g
     ><g stroke-dasharray="1,2" stroke-miterlimit="5" transform="translate(490,800)" stroke-linecap="butt"
     ><path fill="none" d="M10.5 10.5 L10.5 40.5" clip-path="url(#clipPath29)"
@@ -546,22 +573,32 @@
     ><g transform="translate(1140,650)"
     ><path fill="none" d="M124.75 5.5 A14.25 15 0 0 0 124.75 35.5" clip-path="url(#clipPath34)"
     /></g
+    ><g fill="rgb(153,255,255)" fill-opacity="0.4902" transform="translate(530,750)" stroke-opacity="0.4902" stroke="rgb(153,255,255)"
+    ><rect x="0.5" width="428.5" height="38.5" y="0.5" clip-path="url(#clipPath35)" stroke="none"
+    /></g
+    ><g transform="translate(530,750)"
+    ><rect fill="none" x="0.5" width="428.5" height="38.5" y="0.5" clip-path="url(#clipPath35)"
+      /><text x="90" font-size="16px" y="17.1562" clip-path="url(#clipPath35)" font-family="monospace" stroke="none" xml:space="preserve"
+      >Generic_Object_Pool_Policy</text
+      ><path fill="none" d="M1 23.1562 L429 23.1562" clip-path="url(#clipPath35)"
+      /><path fill="none" d="M1 28.1562 L429 28.1562" clip-path="url(#clipPath35)"
+    /></g
     ><g fill="rgb(153,255,255)" fill-opacity="0.4902" transform="translate(940,680)" stroke-opacity="0.4902" stroke="rgb(153,255,255)"
-    ><rect x="0.5" width="188.5" height="48.5" y="0.5" clip-path="url(#clipPath35)" stroke="none"
+    ><rect x="0.5" width="188.5" height="48.5" y="0.5" clip-path="url(#clipPath36)" stroke="none"
     /></g
     ><g transform="translate(940,680)"
-    ><rect fill="none" x="0.5" width="188.5" height="48.5" y="0.5" clip-path="url(#clipPath35)"
-      /><text x="37" font-size="16px" y="17.1562" clip-path="url(#clipPath35)" font-family="monospace" font-style="italic" stroke="none" xml:space="preserve"
+    ><rect fill="none" x="0.5" width="188.5" height="48.5" y="0.5" clip-path="url(#clipPath36)"
+      /><text x="37" font-size="16px" y="17.1562" clip-path="url(#clipPath36)" font-family="monospace" font-style="italic" stroke="none" xml:space="preserve"
       >Pool_Context</text
-      ><path fill="none" d="M1 23.1562 L189 23.1562" clip-path="url(#clipPath35)"
-      /><path fill="none" d="M1 28.1562 L189 28.1562" clip-path="url(#clipPath35)"
+      ><path fill="none" d="M1 23.1562 L189 23.1562" clip-path="url(#clipPath36)"
+      /><path fill="none" d="M1 28.1562 L189 28.1562" clip-path="url(#clipPath36)"
     /></g
     ><g fill="rgb(153,255,255)" fill-opacity="0.4902" transform="translate(530,680)" stroke-opacity="0.4902" stroke="rgb(153,255,255)"
-    ><circle r="10" clip-path="url(#clipPath36)" cx="80.5" cy="20.5" stroke="none"
+    ><circle r="10" clip-path="url(#clipPath37)" cx="80.5" cy="20.5" stroke="none"
     /></g
     ><g transform="translate(530,680)"
-    ><circle fill="none" r="10" clip-path="url(#clipPath36)" cx="80.5" cy="20.5"
-      /><text x="7" font-size="16px" y="52.1562" clip-path="url(#clipPath36)" font-family="monospace" stroke="none" xml:space="preserve"
+    ><circle fill="none" r="10" clip-path="url(#clipPath37)" cx="80.5" cy="20.5"
+      /><text x="7" font-size="16px" y="52.1562" clip-path="url(#clipPath37)" font-family="monospace" stroke="none" xml:space="preserve"
       >Poolable_Object</text
     ></g
   ></g

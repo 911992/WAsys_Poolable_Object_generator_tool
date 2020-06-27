@@ -41,7 +41,7 @@ bg=green</panel_attributes>
 -.
 Project: Poolable_Object generator tool
 Title: Generated Artifact Class Diagram
-Doc version: 0.1.0(Jun 25, 2020)
+Doc version: 0.1.2(Jun 26, 2020)
 /(Please refer to gen_artifact_class_diagram_release_note.md file for version history)/
 Repo:
 https://github.com/911992/WAsys_Poolable_Object_generator_tool
@@ -702,5 +702,74 @@ m2=&lt;&lt;provides&gt;&gt;</panel_attributes>
     <panel_attributes>lt=.
 fg=gray</panel_attributes>
     <additional_attributes>380.0;50.0;10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>477</x>
+      <y>675</y>
+      <w>387</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Generic_Object_Pool_Policy
+--
+--
+bg=#99ffff
+layer=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>927</x>
+      <y>675</y>
+      <w>36</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>*F*
+transparency=0
+layer=1
+lw=2
+bg=blue
+fg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>855</x>
+      <y>684</y>
+      <w>90</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>900</x>
+      <y>477</y>
+      <w>90</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>972</x>
+      <y>468</y>
+      <w>36</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>*F*
+transparency=0
+layer=1
+lw=2
+bg=blue
+fg=white</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
