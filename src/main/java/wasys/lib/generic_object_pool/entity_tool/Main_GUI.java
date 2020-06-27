@@ -10,6 +10,9 @@ Created on: Jun 25, 2020 10:36:27 PM
     @author https://github.com/911992
  
 History:
+    0.1.1 (20200626)
+        • Reorder package/class-name input elements
+
     initial version: 0.1(20200625)
  */
 package wasys.lib.generic_object_pool.entity_tool;
@@ -137,7 +140,7 @@ public class Main_GUI extends javax.swing.JFrame {
 
         btn_save.setText("Generate And Save To File(ctrl+s)");
         btn_save.setToolTipText("");
-        btn_save.setNextFocusableComponent(textbox_package);
+        btn_save.setNextFocusableComponent(textbox_classname);
         btn_save.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_saveActionPerformed(evt);
@@ -210,17 +213,17 @@ public class Main_GUI extends javax.swing.JFrame {
         jLabel1.setText("package:");
         jLabel1.setToolTipText("");
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_END;
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         jPanel3.add(jLabel1, gridBagConstraints);
 
         textbox_package.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        textbox_package.setNextFocusableComponent(textbox_classname);
+        textbox_package.setNextFocusableComponent(textbox_pool_pol_stmnt);
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.weightx = 0.5;
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
@@ -228,18 +231,18 @@ public class Main_GUI extends javax.swing.JFrame {
 
         jLabel2.setText("class-name:");
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_END;
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         jPanel3.add(jLabel2, gridBagConstraints);
 
         textbox_classname.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         textbox_classname.setText("My_Class");
-        textbox_classname.setNextFocusableComponent(textbox_pool_pol_stmnt);
+        textbox_classname.setNextFocusableComponent(textbox_package);
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 3;
-        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.weightx = 0.5;
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);

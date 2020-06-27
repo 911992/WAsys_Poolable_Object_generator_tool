@@ -10,6 +10,9 @@ Created on: Jun 25, 2020 12:22:59 PM
     @author https://github.com/911992
  
 History:
+    0.1.1 (20200626)
+        • Generated close() method now doesn't throw Exception
+
     initial version: 0.1(20200625)
 */
 
@@ -233,7 +236,7 @@ public class Type_Generator {
         
         /*close method impl*/
         _out.printf("\t@Override\n");
-        _out.printf("\tpublic void close() throws Exception {\n");
+        _out.printf("\tpublic void close(){\n");
         _out.printf("\t\tthis.back_to_pool();\n");
         _out.printf("\t}\n\n");
         
