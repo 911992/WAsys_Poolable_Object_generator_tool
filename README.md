@@ -7,7 +7,7 @@ Simple tool for making skeleton of `Poolable_Object` [WAsys_simple_generic_objec
 *diagram 0: social media vector*
 
 ## Revision History
-Latest: v0.1.2 (Jun 26, 2020)  
+Latest: v0.1.3 (Jun 29, 2020)  
 
 Please refer to [release_note.md](./release_note.md) file  
 

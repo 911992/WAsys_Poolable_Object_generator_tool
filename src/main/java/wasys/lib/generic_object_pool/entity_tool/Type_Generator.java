@@ -10,6 +10,9 @@ Created on: Jun 25, 2020 12:22:59 PM
     @author https://github.com/911992
  
 History:
+    0.1.3 (20200629)
+        • Fixed the bad blank line of generated type javadoc
+
     0.1.2 (20200626)
         • Fixed the issue, about missed import for type Generic_Object_Pool_Policy when defailt pool policy statement is asked
 
@@ -134,7 +137,8 @@ public class Type_Generator {
         _out.printf(" *  try(%s _ins = %s.%s();){\n",arg_type_name,arg_type_name,NEW_INSTANCE_FUNC_NAME);
         _out.printf(" *  ...\n");
         _out.printf(" *  }//automatically releasing the instance\n");
-        _out.printf(" *  </pre>\n\n");
+        _out.printf(" *  </pre>\n");
+        _out.printf(" *  \n");
         _out.printf(" *  <p>Sample Usage</p>\n");
         _out.printf(" *  <pre>\n");
         _out.printf(" *  %s _ins = %s.%s();\n",arg_type_name,arg_type_name,NEW_INSTANCE_FUNC_NAME);
