@@ -4,6 +4,20 @@ repo: https://github.com/911992/WAsys_Poolable_Object_generator_tool
 Author: [911992](https://github.com/911992)  
 *(NOTE: following list carries mentionable(not all) changes. For detailed changes, check source code(s))*  
 
+**0.1.4** (Jun 30, 2020) 
+
+0. Fixed the issue about one redundant leading whitespace of generated type javadoc
+1. `Source_Code::Type_Generator.java`  
+    * Removed redundant whitespace of generated type javadoc(leading extra space)  
+2. `Source_Code::WAsys_Project_Info.java`
+    * Updated `PROJECT_VERSION`, and `PROJECT_BUILD` fields
+3. Repo
+    * Updated `pom.xml` file
+        * Chnaged the artifact to version `0.1.4`
+    * Updated the [graphical interface screenshot](./_docs/_images/graphical_interface_sample.png)
+
+<hr/>
+
 **0.1.3** (Jun 29, 2020) 
 
 0. Fixed the issue about blank line of generated type javadoc

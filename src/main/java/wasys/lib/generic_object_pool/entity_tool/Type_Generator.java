@@ -10,6 +10,9 @@ Created on: Jun 25, 2020 12:22:59 PM
     @author https://github.com/911992
  
 History:
+    0.1.4 (20200630)
+        • Removed redundant whitespace of generated type javadoc(leading extra space)
+
     0.1.3 (20200629)
         • Fixed the bad blank line of generated type javadoc
 
@@ -131,20 +134,20 @@ public class Type_Generator {
         
         /*sample usage*/
         _out.printf("/**\n");
-        _out.printf(" *  This class is a poolable type, make sure any acquired instance will be released once is no more needed.\n");
-        _out.printf(" *  <p>Sample Usage (using {@code try-with-resources}) (<b>recommended</b>)</p>\n");
-        _out.printf(" *  <pre>\n");
-        _out.printf(" *  try(%s _ins = %s.%s();){\n",arg_type_name,arg_type_name,NEW_INSTANCE_FUNC_NAME);
-        _out.printf(" *  ...\n");
-        _out.printf(" *  }//automatically releasing the instance\n");
-        _out.printf(" *  </pre>\n");
-        _out.printf(" *  \n");
-        _out.printf(" *  <p>Sample Usage</p>\n");
-        _out.printf(" *  <pre>\n");
-        _out.printf(" *  %s _ins = %s.%s();\n",arg_type_name,arg_type_name,NEW_INSTANCE_FUNC_NAME);
-        _out.printf(" *  ...\n");
-        _out.printf(" *  _ins.%s();//IMPORTANT\n",BACK_TO_POOL_METHOD_NAME);
-        _out.printf(" *  </pre>\n");
+        _out.printf(" * This class is a poolable type, make sure any acquired instance will be released once is no more needed.\n");
+        _out.printf(" * <p>Sample Usage (using {@code try-with-resources}) (<b>recommended</b>)</p>\n");
+        _out.printf(" * <pre>\n");
+        _out.printf(" * try(%s _ins = %s.%s();){\n",arg_type_name,arg_type_name,NEW_INSTANCE_FUNC_NAME);
+        _out.printf(" * ...\n");
+        _out.printf(" * }//automatically releasing the instance\n");
+        _out.printf(" * </pre>\n");
+        _out.printf(" * \n");
+        _out.printf(" * <p>Sample Usage</p>\n");
+        _out.printf(" * <pre>\n");
+        _out.printf(" * %s _ins = %s.%s();\n",arg_type_name,arg_type_name,NEW_INSTANCE_FUNC_NAME);
+        _out.printf(" * ...\n");
+        _out.printf(" * _ins.%s();//IMPORTANT\n",BACK_TO_POOL_METHOD_NAME);
+        _out.printf(" * </pre>\n");
         _out.printf(" */\n");
         
         /*class definition*/
