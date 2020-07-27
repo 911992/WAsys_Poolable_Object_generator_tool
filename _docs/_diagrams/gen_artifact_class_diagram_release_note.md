@@ -3,6 +3,12 @@ repo: https://github.com/911992/WAsys_Poolable_Object_generator_tool
 file: [generated artifact class_diagram](./gen_artifact_class_diagram.svg)  
 Author: [911992](https://github.com/911992)  
 
+**0.1.5** (Jul 27, 2020)
+
+* Reordered the `reset_state(void):void` method in `{USER_TYPE_NAME}`, to the top(very first member)
+
+<hr/>
+
 **0.1.2** (Jun 26, 2020)
 
 * Added missed `Generic_Object_Pool_Policy` type, and dependency to `{USER_TYPE_NAME}`

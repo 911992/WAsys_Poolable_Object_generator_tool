@@ -10,6 +10,11 @@ Created on: Jun 25, 2020 12:22:59 PM
     @author https://github.com/911992
  
 History:
+    0.1.5 (20200727)
+        • Fixed a very stupid string comparision using == operator, (╯°□°)╯︵ ┻━┻
+        • Added TODO comment for reset_state function
+        • Replaced reset_state next to user members
+
     0.1.4 (20200630)
         • Removed redundant whitespace of generated type javadoc(leading extra space)
 
@@ -127,7 +132,7 @@ public class Type_Generator {
         
         /*imports*/
         _out.printf("%s\n",ESSENTIAL_IMPORTS_ALL);
-        if(arg_pool_policy == DEFAULT_POL_POLICY_STATEMENT || arg_pool_policy.equals(DEFAULT_POL_POLICY_STATEMENT)){
+        if(DEFAULT_POL_POLICY_STATEMENT.equals(arg_pool_policy)){
             _out.printf("import %s;\n", OBJECT_POOL_POLICY_IMPORT);
         }
         _out.printf("\n");
@@ -166,6 +171,16 @@ public class Type_Generator {
         _out.printf("\t/*User-defined members --- start*/\n\n");
         
         _out.printf("\t/*User-defined members ----- end*/\n\n");
+        
+        /*reset_state method impl*/
+        _out.printf("\t@Override\n");
+        _out.printf("\tpublic void reset_state() {\n");
+        _out.printf("\t\t//Mark this instance as out-of-work, DO NOT CHANGE\n");
+        _out.printf("\t\tthis.%s();\n\n",WORKING_VARIALBE_SETTER_FUNC_NAME);
+        _out.printf("\t\t/*User-defined instance reset --- start*/\n");
+        _out.printf("\t\t//TODO: reset/clearout attributes/instance here (e.g. nulling stuffs, closing things, etc...)\n");
+        _out.printf("\t\t/*User-defined instance reset ----- end*/\n");
+        _out.printf("\t}\n\n");
         
         /*pool initialization*/
         _out.printf("\t/*object pool*/\n");
@@ -231,12 +246,6 @@ public class Type_Generator {
         /*pre_destroy method impl*/
         _out.printf("\t@Override\n");
         _out.printf("\tpublic void pre_destroy() {\n");
-        _out.printf("\t}\n\n");
-        
-        /*reset_state method impl*/
-        _out.printf("\t@Override\n");
-        _out.printf("\tpublic void reset_state() {\n");
-        _out.printf("\t\tthis.%s();\n",WORKING_VARIALBE_SETTER_FUNC_NAME);
         _out.printf("\t}\n\n");
         
         /*set_pool method impl*/

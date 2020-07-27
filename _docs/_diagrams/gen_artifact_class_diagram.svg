@@ -192,7 +192,7 @@
       ><text x="5" xml:space="preserve" y="82.7812" clip-path="url(#clipPath6)" stroke="none"
       >Diagram</text
       ><text x="5" xml:space="preserve" y="97.9375" clip-path="url(#clipPath6)" stroke="none"
-      >Doc version: 0.1.2(Jun 26, 2020)</text
+      >Doc version: 0.1.5(Jul 27, 2020)</text
       ><text font-style="italic" x="5" xml:space="preserve" y="113.0938" clip-path="url(#clipPath6)" stroke="none"
       >(Please refer to</text
       ><text font-style="italic" x="5" xml:space="preserve" y="128.25" clip-path="url(#clipPath6)" stroke="none"
@@ -341,25 +341,25 @@
       >-__object_is_busy__:bool {volatile}</text
       ><path fill="none" d="M1 58.4688 L409 58.4688" clip-path="url(#clipPath18)"
       /><text x="5" font-size="16px" y="72.625" clip-path="url(#clipPath18)" font-family="monospace" stroke="none" xml:space="preserve"
-      >&lt;__pool__init&gt;:static{}</text
-      ><text x="5" font-size="16px" y="87.7812" text-decoration="underline" clip-path="url(#clipPath18)" font-family="monospace" stroke="none" xml:space="preserve"
-      >+get_an_instance():{USER_TYPE_NAME}</text
-      ><text x="5" font-size="16px" y="102.9375" text-decoration="underline" clip-path="url(#clipPath18)" font-family="monospace" stroke="none" xml:space="preserve"
-      >+get_pool(void):Object_Pool</text
-      ><text x="5" font-size="16px" y="118.0938" clip-path="url(#clipPath18)" font-family="monospace" stroke="none" xml:space="preserve"
-      >-{USER_TYPE_NAME}():{USER_TYPE_NAME}</text
-      ><text x="5" font-size="16px" y="133.25" clip-path="url(#clipPath18)" font-family="monospace" stroke="none" xml:space="preserve"
-      >-__is_invalid__(void):bool</text
-      ><text x="5" font-size="16px" y="148.4062" clip-path="url(#clipPath18)" font-family="monospace" stroke="none" xml:space="preserve"
-      >-__invalidate__(void):void</text
-      ><text x="5" font-size="16px" y="163.5625" clip-path="url(#clipPath18)" font-family="monospace" stroke="none" xml:space="preserve"
-      >+back_to_pool(void):void</text
-      ><text x="5" font-size="16px" y="178.7188" clip-path="url(#clipPath18)" font-family="monospace" stroke="none" xml:space="preserve"
-      >+post_create(void):void</text
-      ><text x="5" font-size="16px" y="193.875" clip-path="url(#clipPath18)" font-family="monospace" stroke="none" xml:space="preserve"
-      >+pre_destroy(void):void</text
-      ><text x="5" font-size="16px" y="209.0312" clip-path="url(#clipPath18)" font-family="monospace" stroke="none" xml:space="preserve"
       >+reset_state(void):void</text
+      ><text x="5" font-size="16px" y="87.7812" clip-path="url(#clipPath18)" font-family="monospace" stroke="none" xml:space="preserve"
+      >&lt;__pool__init&gt;:static{}</text
+      ><text x="5" font-size="16px" y="102.9375" text-decoration="underline" clip-path="url(#clipPath18)" font-family="monospace" stroke="none" xml:space="preserve"
+      >+get_an_instance():{USER_TYPE_NAME}</text
+      ><text x="5" font-size="16px" y="118.0938" text-decoration="underline" clip-path="url(#clipPath18)" font-family="monospace" stroke="none" xml:space="preserve"
+      >+get_pool(void):Object_Pool</text
+      ><text x="5" font-size="16px" y="133.25" clip-path="url(#clipPath18)" font-family="monospace" stroke="none" xml:space="preserve"
+      >-{USER_TYPE_NAME}():{USER_TYPE_NAME}</text
+      ><text x="5" font-size="16px" y="148.4062" clip-path="url(#clipPath18)" font-family="monospace" stroke="none" xml:space="preserve"
+      >-__is_invalid__(void):bool</text
+      ><text x="5" font-size="16px" y="163.5625" clip-path="url(#clipPath18)" font-family="monospace" stroke="none" xml:space="preserve"
+      >-__invalidate__(void):void</text
+      ><text x="5" font-size="16px" y="178.7188" clip-path="url(#clipPath18)" font-family="monospace" stroke="none" xml:space="preserve"
+      >+back_to_pool(void):void</text
+      ><text x="5" font-size="16px" y="193.875" clip-path="url(#clipPath18)" font-family="monospace" stroke="none" xml:space="preserve"
+      >+post_create(void):void</text
+      ><text x="5" font-size="16px" y="209.0312" clip-path="url(#clipPath18)" font-family="monospace" stroke="none" xml:space="preserve"
+      >+pre_destroy(void):void</text
       ><text x="5" font-size="16px" y="224.1875" clip-path="url(#clipPath18)" font-family="monospace" stroke="none" xml:space="preserve"
       >+set_pool(:Object_Pool):void</text
       ><text x="5" font-size="16px" y="239.3438" clip-path="url(#clipPath18)" font-family="monospace" stroke="none" xml:space="preserve"

@@ -7,8 +7,7 @@ Simple tool for making skeleton of `Poolable_Object` [WAsys_simple_generic_objec
 *diagram 0: social media vector*
 
 ## Revision History
-Latest: v0.1.4 (Jun 30, 2020)  
-
+Latest: v0.1.5 (Jul 27, 2020)  
 Please refer to [release_note.md](./release_note.md) file  
 
 ## Requirments
@@ -84,7 +83,7 @@ The `Object_Factory` class also lands as `static` and inner class of the enruty 
 Entity tracks the object pool state using a private `boolean` variable, so as far as entity is used in right way, there will be no inconsistency and/or UB.
 
 ![generated class/artifact class diagram](./_docs/_diagrams/gen_artifact_class_diagram_partial.svg)  
-*diagram 1: generated class/artifact class diagram*
+*diagram 1: [generated class/artifact class diagram](./_docs/_diagrams/gen_artifact_class_diagram.svg)*
 
 ## Using A Generated Entity
 This is highly recommended to use a `try-with-resources` block working with generated entity by this tool. As the target entity is also as `AutoClosable`, and would return the entuty to the related ppol when no more is needed. Considering
