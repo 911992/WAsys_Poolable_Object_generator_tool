@@ -7,7 +7,7 @@ Simple tool for making skeleton of `Poolable_Object` [WAsys_simple_generic_objec
 *diagram 0: social media vector*
 
 ## Revision History
-Latest: v0.1.5 (Jul 27, 2020)  
+Latest: v0.1.5.1 (Aug 16, 2020)  
 Please refer to [release_note.md](./release_note.md) file  
 
 ## Requirments
@@ -68,7 +68,8 @@ Class name: `Guru_Entity`
 Package : `com.github.911992`  
 Pool Policy Statement: `Meta_CLass.get_default_pool_policy()`  
 Output: to related `.java` class  
-**Command:** `java -jar <<artifact_name>> -class Guru_Entity -package com.github.911992 -save` *Result will be saved to `Guru_Entity.java` file*
+**Command:** `java -jar <<artifact_name>> -class Guru_Entity -package com.github.911992 -save -pol Meta_CLass.get_default_pool_policy()`  
+*Result will be saved to `Guru_Entity.java` file*
 
 ### Graphical Interface
 For running the graphical interface, run the artifact using `-fancy` command. It looks osmething liek following.
@@ -106,7 +107,10 @@ _ins.back_to_pool();//IMPORTANT
 Please mind to **not forget** to **release** the instance once it's no more needed, otherwise inconsistency and/or UB may happen.
 
 ## Meta
-You may please check the related [WAsys_simple_generic_object_pool](https://github.com/911992/WAsys_simple_generic_object_pool) repo/lib that this tool is supposed to be a helper for.
+Considering following lib/repos could be related to this tool
+0. [WAsys_simple_generic_object_pool](https://github.com/911992/WAsys_simple_generic_object_pool) repo/lib that this tool is supposed to be a helper for
+1. [WAsys_pojo_http_data_entity_tool](https://github.com/911992/WAsys_pojo_http_data_entity_tool) tool for generating `Fillable_Object` entities([WAsys_pojo_http_data](https://github.com/911992/WAsys_pojo_http_data))
+
 
 ### Icon Of Graphical Interface
 Icon image of grphical interface is a windows 9x icon known as `app-wizard-file`(or something like that).  

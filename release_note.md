@@ -4,6 +4,16 @@ repo: https://github.com/911992/WAsys_Poolable_Object_generator_tool
 Author: [911992](https://github.com/911992)  
 *(NOTE: following list carries mentionable(not all) changes. For detailed changes, check source code(s))*  
 
+**0.1.5.1** (Aug 16, 2020) 
+1. Diagrams
+    * Updated the media cover image
+0. Repo
+    * Updated `README.md` file
+        * Fixed the *Scenario 2* cmd command (added missed `-pol` param)
+        * Updated Meta section, added `Fillable_Object` tool
+
+<hr/>
+
 **0.1.5** (Jul 27, 2020) 
 
 0. `Source_Code::Type_Generator.java`  
