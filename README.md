@@ -7,7 +7,7 @@ Simple tool for making skeleton of `Poolable_Object` [WAsys_simple_generic_objec
 *diagram 0: social media vector*
 
 ## Revision History
-Latest: v0.1.5.1 (Aug 16, 2020)  
+Latest: v0.2.1 (Aug 23, 2020)  
 Please refer to [release_note.md](./release_note.md) file  
 
 ## Requirments
@@ -33,7 +33,7 @@ By default it shows the help(`-h`) command, something like following.
 ```
 $ java -jar ./dist/WAsys_poolable_entity_tool.jar
 Error! zero-length input argument is not expected!
-WAsys Poolable_Object Skeleton Generator v0.1(20200625)
+WAsys Poolable_Object Skeleton Generator v0.2.1(20200823)
 https://github.com/911992/WAsys_Poolable_Object_generator_tool
 -----------
 Command Lines:
@@ -79,7 +79,7 @@ For running the graphical interface, run the artifact using `-fancy` command. It
 
 ## Generated Entity
 Generated entity is about a `Poolable_Object` & `AutoClosable` class, that has the related `Object_Pool` as a `static` field.  
-The `Object_Factory` class also lands as `static` and inner class of the enruty type. That cretaes instance of the entity using its **private** constructor.  
+The `Object_Factory` class also lands as `static` and inner class of the entity type. That cretaes instance of the entity using its **private** constructor.  
 
 Entity tracks the object pool state using a private `boolean` variable, so as far as entity is used in right way, there will be no inconsistency and/or UB.
 

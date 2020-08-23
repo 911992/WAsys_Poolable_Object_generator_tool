@@ -10,6 +10,10 @@ Created on: Jun 25, 2020 12:22:59 PM
     @author https://github.com/911992
  
 History:
+    0.2.1 (20200823)
+        • Changes related to WAsys_simple_generic_object_pool API change version 0.5.1
+        • Inline Factory class now implements wasys.lib.java_type_util.reflect.type_sig.Object_Factory
+
     0.1.5 (20200727)
         • Fixed a very stupid string comparision using == operator, (╯°□°)╯︵ ┻━┻
         • Added TODO comment for reset_state function
@@ -45,9 +49,9 @@ import wasys.lib.generic_object_pool.entity_tool.meta.WAsys_Project_Info;
 public class Type_Generator {
     
     private static final String ESSENTIAL_IMPORTS[]={
+        "wasys.lib.java_type_util.reflect.type_sig.Object_Factory",
         "wasys.lib.generic_object_pool.Object_Pool",
         "wasys.lib.generic_object_pool.Pool_Context",
-        "wasys.lib.generic_object_pool.api.Object_Factory",
         "wasys.lib.generic_object_pool.api.Poolable_Object"
     };
     
@@ -196,9 +200,9 @@ public class Type_Generator {
         
         /*factory class*/
         _out.printf("\t/*internal factory class for the type*/\n");
-        _out.printf("\tprivate static class %s implements Object_Factory{\n\n", INTERNAL_FACTORY_CLASS_NAME);
+        _out.printf("\tprivate static class %s implements Object_Factory<%s>{\n\n", INTERNAL_FACTORY_CLASS_NAME,arg_type_name);
         _out.printf("\t\t@Override\n");
-        _out.printf("\t\tpublic Poolable_Object create_object() {\n");
+        _out.printf("\t\tpublic %s create_object(Class arg_type) {\n",arg_type_name);
         _out.printf("\t\t\treturn new %s();\n",arg_type_name);
         _out.printf("\t\t}\n\n");
         _out.printf("\t}\n\n");
