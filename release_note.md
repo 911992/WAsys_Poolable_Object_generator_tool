@@ -4,6 +4,25 @@ repo: https://github.com/911992/WAsys_Poolable_Object_generator_tool
 Author: [911992](https://github.com/911992)  
 *(NOTE: following list carries mentionable(not all) changes. For detailed changes, check source code(s))*  
 
+**0.2.7** (Aug 29, 2020) 
+
+0. Changes related to API change of `WAsys_simple_generic_object_pool` version `0.5.7`
+1. `Source_Code::Type_Generator`
+    * Generated artifact now follows the new changes related to `WAsys_simple_generic_object_pool-v0.5.7`
+    * Generated artifact now have `static` functions to get the standalone(out-of-pool) object fatory (`get_standalone_obj_factory(void):Object_Factory<{USER_TYPE_NAME}>`)
+    * Generated artifact now has a `static private` factory variable that holds an instance of the internal pool (`__factory__`)
+    * Updated the imports, removed import for `Pool_Context`, and add `Generic_Object_Pool instead`
+2. `Source_Code::WAsys_Project_Info.java`
+    * Updated `PROJECT_VERSION`, and `PROJECT_BUILD` fields
+3. Diagrams
+    * Updated [`gen_artifact_class_diagram`](./_docs/_diagrams/gen_artifact_class_diagram.svg) (read the dedicated changes [here](./_docs/_diagrams/gen_artifact_class_diagram_release_note.md))
+4. Repo
+    * Updated `pom.xml` file
+        * Added copyright literal for generated javadoc(plugin)
+        * Changed the artifact to version `0.2.7`
+    * Updated the [graphical interface screenshot](./_docs/_images/graphical_interface_sample.png)
+
+<hr/>
 
 **0.2.1** (Aug 23, 2020) 
 
@@ -16,7 +35,7 @@ Author: [911992](https://github.com/911992)
     * Updated [`gen_artifact_class_diagram`](./_docs/_diagrams/gen_artifact_class_diagram.svg) (read the dedicated changes [here](./_docs/_diagrams/gen_artifact_class_diagram_release_note.md))
 4. Repo
     * Updated `pom.xml` file
-        * changed the artifact to version `0.2.1`        
+        * changed the artifact to version `0.2.1`
     * Updated the [graphical interface screenshot](./_docs/_images/graphical_interface_sample.png)
 
 <hr/>

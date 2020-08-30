@@ -10,6 +10,12 @@ Created on: Jun 25, 2020 12:22:59 PM
     @author https://github.com/911992
  
 History:
+    0.2.7 (20200829)
+        • Generated artifact now follows the new changes related to WAsys_simple_generic_object_pool-v0.5.7
+        • Generated artifact now have static functions to get the standalone(out-of-pool) object fatory (get_standalone_obj_factory(void):Object_Factory<{USER_TYPE_NAME}>)
+        • Generated artifact now has a static private factory variable that holds an instance of the internal pool (__factory__)
+        • Updated the imports, removed import for Pool_Context, and add Generic_Object_Pool instead
+
     0.2.1 (20200823)
         • Changes related to WAsys_simple_generic_object_pool API change version 0.5.1
         • Inline Factory class now implements wasys.lib.java_type_util.reflect.type_sig.Object_Factory
@@ -51,7 +57,7 @@ public class Type_Generator {
     private static final String ESSENTIAL_IMPORTS[]={
         "wasys.lib.java_type_util.reflect.type_sig.Object_Factory",
         "wasys.lib.generic_object_pool.Object_Pool",
-        "wasys.lib.generic_object_pool.Pool_Context",
+        "wasys.lib.generic_object_pool.Generic_Object_Pool",
         "wasys.lib.generic_object_pool.api.Poolable_Object"
     };
     
@@ -81,11 +87,15 @@ public class Type_Generator {
     
     private static final String POOL_VARIABLE_NAME = "__pool__";
     
+    private static final String OBJ_FACTORY_VARIABLE_NAME = "__factory__";
+    
     private static final String INTERNAL_FACTORY_CLASS_NAME = "Factory";
     
     private static final String NEW_INSTANCE_FUNC_NAME = "get_an_instance";
     
     private static final String GET_POOL_VAR_FUNC_NAME = "get_pool";
+    
+    private static final String GET_STANDALONE_OBJ_FACTORY_FUNC_NAME = "get_standalone_obj_factory";
     
     private static final String BACK_TO_POOL_METHOD_NAME = "back_to_pool";
     
@@ -186,12 +196,18 @@ public class Type_Generator {
         _out.printf("\t\t/*User-defined instance reset ----- end*/\n");
         _out.printf("\t}\n\n");
         
-        /*pool initialization*/
+        /*pool, and object factory declaration*/
+        /*pool*/
         _out.printf("\t/*object pool*/\n");
-        _out.printf("\tfinal static Object_Pool %s;\n",POOL_VARIABLE_NAME);
-        _out.printf("\t/*object pool initialization*/\n");
+        _out.printf("\tfinal static Object_Pool %s;\n\n",POOL_VARIABLE_NAME);
+        /*object_factory*/
+        _out.printf("\t/*object factory*/\n");
+        _out.printf("\tfinal static Object_Factory<%s> %s;\n\n", arg_type_name,OBJ_FACTORY_VARIABLE_NAME);
+        
+        _out.printf("\t/*object pool, and object factory initialization*/\n");
         _out.printf("\tstatic{\n");
-        _out.printf("\t\t%s = Pool_Context.get_insatcne().get_pool_unregistered_synced(new %s(),%s);\n",POOL_VARIABLE_NAME,INTERNAL_FACTORY_CLASS_NAME,arg_pool_policy);
+        _out.printf("\t\t%s=new %s();\n", OBJ_FACTORY_VARIABLE_NAME,INTERNAL_FACTORY_CLASS_NAME);
+        _out.printf("\t\t%s = Generic_Object_Pool.new_pool_instance(%s,%s);\n",POOL_VARIABLE_NAME,OBJ_FACTORY_VARIABLE_NAME,arg_pool_policy);
         _out.printf("\t}\n\n");
         
         /*working variable*/
@@ -217,8 +233,13 @@ public class Type_Generator {
         
         /*getter for pool*/
         _out.printf("\t/*method to return %s*/\n",POOL_VARIABLE_NAME);
-        _out.printf("\tpublic static Object_Pool %s(){\n", GET_POOL_VAR_FUNC_NAME);
+        _out.printf("\tpublic static Object_Pool<%s> %s(){\n", arg_type_name,GET_POOL_VAR_FUNC_NAME);
         _out.printf("\t\treturn %s;\n\t}\n\n", POOL_VARIABLE_NAME);
+        
+        /*standalone object factory*/
+        _out.printf("\t/*method to return out-of-pool(standalone) object factory\n\tNOTE: generated object SHOULD NOT be released back to the pool*/\n");
+        _out.printf("\tpublic static Object_Factory<%s> %s(){\n",arg_type_name,GET_STANDALONE_OBJ_FACTORY_FUNC_NAME);
+        _out.printf("\t\treturn %s;\n\t}\n\n", OBJ_FACTORY_VARIABLE_NAME);
         
         /*private constructor*/
         _out.printf("\tprivate %s(){\n\t\t/*User-defined instance initialization(if any)*/\n\t}\n\n",arg_type_name);

@@ -3,6 +3,17 @@ repo: https://github.com/911992/WAsys_Poolable_Object_generator_tool
 file: [generated artifact class_diagram](./gen_artifact_class_diagram.svg)  
 Author: [911992](https://github.com/911992)  
 
+**0.2.7** (Aug 29, 2020)
+
+* Removed usage of `Pool_Context` class in *WAsys Generic Object Pool* component, since it's no more
+* Added `Generic_Object_Pool` in *WAsys Generic Object Pool*
+* Added `__factory__:Object_Factory<{USER_TYPE_NAME}>` `static final` field to generated `{USER_TYPE_NAME}` class
+* Field `__pool__` now is type-var as `Object_Pool<{USER_TYPE_NAME}>`
+* Added `get_standalone_obj_factory(void):Object_Factory<{USER_TYPE_NAME}>` in generated `{USER_TYPE_NAME}` class
+* Renamed `__pool__init` static init to `__pool__AND__factory__init`
+
+<hr/>
+
 **0.2.1** (Aug 23, 2020)
 
 * Changes related to `WAsys_simple_generic_object_pool` API change version `0.5.1`

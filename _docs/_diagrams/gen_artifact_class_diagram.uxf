@@ -4,22 +4,24 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>456</x>
-      <y>224</y>
-      <w>328</w>
-      <h>208</h>
+      <x>448</x>
+      <y>216</y>
+      <w>544</w>
+      <h>224</h>
     </coordinates>
     <panel_attributes>{USER_TYPE_NAME}
 --
-_-__pool__:Object_Pool {final}_
+_-__pool__:Object_Pool&lt;{USER_TYPE_NAME}&gt; {final}_
+_-__factory__:Object_Factory&lt;{USER_TYPE_NAME}&gt; {final}___
 -__object_is_busy__:bool {volatile}
 --
 +reset_state(void):void
-&lt;__pool__init&gt;:static{}
+&lt;__pool__AND__factory__init&gt;:static{}
 _+get_an_instance():{USER_TYPE_NAME}_
-_+get_pool(void):Object_Pool_
+_+get_pool(void):Object_Pool&lt;{USER_TYPE_NAME}&gt;_
+_+get_standalone_obj_factory(void):Object_Factory&lt;{USER_TYPE_NAME}&gt;_
 -{USER_TYPE_NAME}():{USER_TYPE_NAME}
--__is_invalid__(void):bool
+-__is_invalid__(void):bool:=true
 -__invalidate__(void):void
 +back_to_pool(void):void
 +post_create(void):void
@@ -32,8 +34,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLObject</id>
     <coordinates>
-      <x>64</x>
-      <y>96</y>
+      <x>56</x>
+      <y>88</y>
       <w>288</w>
       <h>400</h>
     </coordinates>
@@ -41,7 +43,7 @@ bg=green</panel_attributes>
 -.
 Project: Poolable_Object generator tool
 Title: Generated Artifact Class Diagram
-Doc version: 0.2.1(Aug 23, 2020)
+Doc version: 0.2.7(Aug 29, 2020)
 /(Please refer to gen_artifact_class_diagram_release_note.md file for version history)/
 Repo:
 https://github.com/911992/WAsys_Poolable_Object_generator_tool
@@ -61,8 +63,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLObject</id>
     <coordinates>
-      <x>64</x>
-      <y>504</y>
+      <x>56</x>
+      <y>496</y>
       <w>288</w>
       <h>80</h>
     </coordinates>
@@ -82,8 +84,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>72</x>
-      <y>360</y>
+      <x>64</x>
+      <y>352</y>
       <w>96</w>
       <h>56</h>
     </coordinates>
@@ -95,8 +97,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>176</x>
-      <y>424</y>
+      <x>168</x>
+      <y>416</y>
       <w>168</w>
       <h>56</h>
     </coordinates>
@@ -107,8 +109,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>72</x>
-      <y>424</y>
+      <x>64</x>
+      <y>416</y>
       <w>96</w>
       <h>56</h>
     </coordinates>
@@ -119,8 +121,8 @@ bg=green</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>176</x>
-      <y>360</y>
+      <x>168</x>
+      <y>352</y>
       <w>168</w>
       <h>56</h>
     </coordinates>
@@ -131,9 +133,9 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>368</x>
-      <y>456</y>
-      <w>872</w>
+      <x>360</x>
+      <y>560</y>
+      <w>808</w>
       <h>168</h>
     </coordinates>
     <panel_attributes>wasys::lib::generic_object_pool
@@ -145,9 +147,9 @@ layer=-200</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>384</x>
-      <y>480</y>
-      <w>512</w>
+      <x>376</x>
+      <y>584</y>
+      <w>648</w>
       <h>136</h>
     </coordinates>
     <panel_attributes>symbol=component
@@ -159,21 +161,21 @@ layer=-190</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>888</x>
-      <y>584</y>
-      <w>112</w>
+      <x>1016</x>
+      <y>688</y>
+      <w>72</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=()-
 bg=#ccffff</panel_attributes>
-    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>912</x>
-      <y>600</y>
-      <w>128</w>
+      <x>1024</x>
+      <y>704</y>
+      <w>104</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>Object_Pool
@@ -183,8 +185,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLInterface</id>
     <coordinates>
-      <x>400</x>
-      <y>520</y>
+      <x>392</x>
+      <y>624</y>
       <w>128</w>
       <h>56</h>
     </coordinates>
@@ -196,8 +198,8 @@ layer=3</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>376</x>
-      <y>296</y>
+      <x>368</x>
+      <y>288</y>
       <w>32</w>
       <h>32</h>
     </coordinates>
@@ -211,8 +213,8 @@ bg=cyan</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>464</x>
-      <y>528</y>
+      <x>456</x>
+      <y>632</y>
       <w>88</w>
       <h>24</h>
     </coordinates>
@@ -222,8 +224,8 @@ bg=cyan</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>808</x>
-      <y>728</y>
+      <x>800</x>
+      <y>832</y>
       <w>272</w>
       <h>24</h>
     </coordinates>
@@ -233,23 +235,23 @@ bg=cyan</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>984</x>
-      <y>584</y>
-      <w>96</w>
+      <x>1072</x>
+      <y>688</y>
+      <w>64</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;60.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>728</x>
-      <y>520</y>
-      <w>152</w>
+      <x>720</x>
+      <y>624</y>
+      <w>200</w>
       <h>40</h>
     </coordinates>
-    <panel_attributes>/Pool_Context/
+    <panel_attributes>Generic_Object_Pool
 --
 --
 bg=#99ffff
@@ -259,8 +261,8 @@ layer=3</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>656</x>
-      <y>528</y>
+      <x>648</x>
+      <y>632</y>
       <w>88</w>
       <h>24</h>
     </coordinates>
@@ -270,8 +272,8 @@ layer=3</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>392</x>
-      <y>632</y>
+      <x>384</x>
+      <y>736</y>
       <w>712</w>
       <h>24</h>
     </coordinates>
@@ -282,8 +284,8 @@ bg=#eeeeff</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>368</x>
-      <y>616</y>
+      <x>360</x>
+      <y>720</y>
       <w>40</w>
       <h>48</h>
     </coordinates>
@@ -293,9 +295,9 @@ bg=#eeeeff</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>816</x>
-      <y>288</y>
-      <w>408</w>
+      <x>664</x>
+      <y>464</y>
+      <w>440</w>
       <h>72</h>
     </coordinates>
     <panel_attributes>template=A:{USER_TYPE_NAME}
@@ -310,8 +312,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>72</x>
-      <y>320</y>
+      <x>64</x>
+      <y>312</y>
       <w>32</w>
       <h>32</h>
     </coordinates>
@@ -323,8 +325,8 @@ bg=pink</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>112</x>
-      <y>320</y>
+      <x>104</x>
+      <y>312</y>
       <w>168</w>
       <h>40</h>
     </coordinates>
@@ -335,21 +337,21 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>776</x>
-      <y>296</y>
-      <w>56</w>
-      <h>24</h>
+      <x>856</x>
+      <y>432</y>
+      <w>24</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>lt=(+)-</panel_attributes>
-    <additional_attributes>10.0;10.0;50.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>760</x>
-      <y>128</y>
-      <w>232</w>
-      <h>48</h>
+      <x>752</x>
+      <y>120</y>
+      <w>144</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>{USER_TYPE_NAME} refers to users requested type name
 bg=#eeeeff
@@ -359,8 +361,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>728</x>
-      <y>152</y>
+      <x>720</x>
+      <y>144</y>
       <w>48</w>
       <h>88</h>
     </coordinates>
@@ -370,10 +372,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>368</x>
-      <y>192</y>
-      <w>872</w>
-      <h>256</h>
+      <x>360</x>
+      <y>184</y>
+      <w>808</w>
+      <h>368</h>
     </coordinates>
     <panel_attributes>{USER_PACKAGE_NAME}
 --
@@ -384,8 +386,8 @@ layer=-200</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>368</x>
-      <y>128</y>
+      <x>360</x>
+      <y>120</y>
       <w>320</w>
       <h>48</h>
     </coordinates>
@@ -397,8 +399,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>648</x>
-      <y>168</y>
+      <x>640</x>
+      <y>160</y>
       <w>24</w>
       <h>40</h>
     </coordinates>
@@ -408,20 +410,20 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>776</x>
-      <y>240</y>
-      <w>160</w>
-      <h>64</h>
+      <x>552</x>
+      <y>432</y>
+      <w>128</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 &lt;&lt;creates&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;20.0;180.0;20.0;180.0;60.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0;140.0;70.0</additional_attributes>
   </element>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>536</x>
-      <y>520</y>
+      <x>528</x>
+      <y>624</y>
       <w>32</w>
       <h>32</h>
     </coordinates>
@@ -435,8 +437,8 @@ lw=2</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>376</x>
-      <y>248</y>
+      <x>368</x>
+      <y>240</y>
       <w>32</w>
       <h>32</h>
     </coordinates>
@@ -450,8 +452,8 @@ lw=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>400</x>
-      <y>256</y>
+      <x>392</x>
+      <y>248</y>
       <w>72</w>
       <h>24</h>
     </coordinates>
@@ -461,8 +463,8 @@ lw=2</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>1064</x>
-      <y>576</y>
+      <x>1120</x>
+      <y>680</y>
       <w>32</w>
       <h>32</h>
     </coordinates>
@@ -476,8 +478,8 @@ bg=cyan</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>400</x>
-      <y>304</y>
+      <x>392</x>
+      <y>296</y>
       <w>72</w>
       <h>24</h>
     </coordinates>
@@ -487,8 +489,8 @@ bg=cyan</panel_attributes>
   <element>
     <id>UMLInterface</id>
     <coordinates>
-      <x>1040</x>
-      <y>144</y>
+      <x>960</x>
+      <y>128</y>
       <w>200</w>
       <h>64</h>
     </coordinates>
@@ -501,8 +503,8 @@ transparency=0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1032</x>
-      <y>152</y>
+      <x>952</x>
+      <y>136</y>
       <w>112</w>
       <h>24</h>
     </coordinates>
@@ -512,8 +514,8 @@ transparency=0</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>1008</x>
-      <y>144</y>
+      <x>928</x>
+      <y>128</y>
       <w>32</w>
       <h>32</h>
     </coordinates>
@@ -527,8 +529,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>376</x>
-      <y>344</y>
+      <x>368</x>
+      <y>336</y>
       <w>32</w>
       <h>32</h>
     </coordinates>
@@ -542,8 +544,8 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>400</x>
-      <y>352</y>
+      <x>392</x>
+      <y>344</y>
       <w>72</w>
       <h>24</h>
     </coordinates>
@@ -553,8 +555,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>1064</x>
-      <y>720</y>
+      <x>1056</x>
+      <y>824</y>
       <w>32</w>
       <h>32</h>
     </coordinates>
@@ -568,8 +570,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>1064</x>
-      <y>240</y>
+      <x>488</x>
+      <y>488</y>
       <w>32</w>
       <h>32</h>
     </coordinates>
@@ -583,19 +585,19 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>968</x>
-      <y>248</y>
-      <w>112</w>
-      <h>64</h>
+      <x>512</x>
+      <y>496</y>
+      <w>168</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>120.0;10.0;10.0;10.0;10.0;60.0</additional_attributes>
+    <additional_attributes>10.0;10.0;190.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>368</x>
-      <y>96</y>
+      <x>360</x>
+      <y>88</y>
       <w>760</w>
       <h>24</h>
     </coordinates>
@@ -605,21 +607,10 @@ style=wordwrap</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>696</x>
-      <y>112</y>
-      <w>24</w>
-      <h>96</h>
-    </coordinates>
-    <panel_attributes>lt=..</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>632</x>
-      <y>520</y>
+      <x>624</x>
+      <y>624</y>
       <w>32</w>
       <h>32</h>
     </coordinates>
@@ -633,23 +624,23 @@ bg=pink</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>376</x>
+      <x>368</x>
+      <y>384</y>
+      <w>32</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>*E*
+transparency=0
+layer=1
+lw=2
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>392</x>
       <y>392</y>
-      <w>32</w>
-      <h>32</h>
-    </coordinates>
-    <panel_attributes>*E*
-transparency=0
-layer=1
-lw=2
-bg=pink</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>400</x>
-      <y>400</y>
       <w>72</w>
       <h>24</h>
     </coordinates>
@@ -659,32 +650,32 @@ bg=pink</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>872</x>
-      <y>528</y>
-      <w>128</w>
+      <x>912</x>
+      <y>632</y>
+      <w>176</w>
       <h>72</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 m2=&lt;&lt;provides&gt;&gt;</panel_attributes>
-    <additional_attributes>140.0;70.0;140.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>200.0;70.0;200.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>680</x>
-      <y>528</y>
-      <w>320</w>
+      <x>672</x>
+      <y>632</y>
+      <w>416</w>
       <h>56</h>
     </coordinates>
     <panel_attributes>lt=.
 fg=gray</panel_attributes>
-    <additional_attributes>380.0;50.0;10.0;50.0;10.0;10.0</additional_attributes>
+    <additional_attributes>500.0;50.0;10.0;50.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>400</x>
-      <y>576</y>
+      <x>392</x>
+      <y>680</y>
       <w>344</w>
       <h>32</h>
     </coordinates>
@@ -698,8 +689,8 @@ layer=3</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>800</x>
-      <y>576</y>
+      <x>792</x>
+      <y>680</y>
       <w>32</w>
       <h>32</h>
     </coordinates>
@@ -714,8 +705,8 @@ fg=white</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>736</x>
-      <y>584</y>
+      <x>728</x>
+      <y>688</y>
       <w>80</w>
       <h>24</h>
     </coordinates>
@@ -725,19 +716,19 @@ fg=white</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>776</x>
-      <y>400</y>
-      <w>80</w>
+      <x>984</x>
+      <y>392</y>
+      <w>112</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;.</panel_attributes>
-    <additional_attributes>80.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>840</x>
-      <y>392</y>
+      <x>1080</x>
+      <y>384</y>
       <w>32</w>
       <h>32</h>
     </coordinates>
@@ -752,9 +743,9 @@ fg=white</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>368</x>
-      <y>664</y>
-      <w>872</w>
+      <x>360</x>
+      <y>768</y>
+      <w>808</w>
       <h>136</h>
     </coordinates>
     <panel_attributes>wasys::lib::java_type_util
@@ -766,8 +757,8 @@ layer=-200</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>376</x>
-      <y>688</y>
+      <x>368</x>
+      <y>792</y>
       <w>520</w>
       <h>104</h>
     </coordinates>
@@ -782,8 +773,8 @@ valign=bottom</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>608</x>
-      <y>696</y>
+      <x>600</x>
+      <y>800</y>
       <w>248</w>
       <h>72</h>
     </coordinates>
@@ -798,8 +789,8 @@ bg=cyan</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>392</x>
-      <y>808</y>
+      <x>384</x>
+      <y>912</y>
       <w>528</w>
       <h>24</h>
     </coordinates>
@@ -810,12 +801,23 @@ bg=#eeeeff</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>368</x>
-      <y>792</y>
+      <x>360</x>
+      <y>896</y>
       <w>40</w>
       <h>48</h>
     </coordinates>
     <panel_attributes>lt=..</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;40.0;30.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>904</x>
+      <y>104</y>
+      <w>24</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
   </element>
 </diagram>

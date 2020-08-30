@@ -10,6 +10,9 @@ Created on: Jun 25, 2020 12:56:11 PM
     @author https://github.com/911992
  
 History:
+    0.2.7 (20200829)
+        • Updated PROJECT_VERSION, and PROJECT_BUILD fields
+
     0.2.1 (20200823)
         • Updated PROJECT_VERSION, and PROJECT_BUILD fields
 
@@ -40,8 +43,8 @@ package wasys.lib.generic_object_pool.entity_tool.meta;
  */
 public class WAsys_Project_Info {
     public static final String PROJECT_REPO="https://github.com/911992/WAsys_Poolable_Object_generator_tool";
-    public static final String PROJECT_VERSION="0.2.1";
-    public static final String PROJECT_BUILD="20200823";
+    public static final String PROJECT_VERSION="0.2.7";
+    public static final String PROJECT_BUILD="20200829";
     public static final String PROJECT_NAME="WAsys Poolable_Object Skeleton Generator";
     public static final String PROJECT_DESC="Simple tool for making skeleton of Poolable_Object (WAsys_simple_generic_object_pool) entities";
     private WAsys_Project_Info(){}
